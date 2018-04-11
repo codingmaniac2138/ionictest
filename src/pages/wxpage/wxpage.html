@@ -1,0 +1,28 @@
+<!--
+  Generated template for the WxpagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>wxpage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <h2>Check Forecast here</h2>
+    <!-- <form (ngSubmit)="saveUser()"> -->
+      <ion-item>
+        <ion-input placeholder = "Enter City" type="text" [(ngModel)]="city.name" name="city"></ion-input>
+      </ion-item>
+      
+      <button id = "0" (click)="saveUser(0)" name = " current" ion-button type="submit" block>Current Forecast</button>
+      <button id = "1" (click)="saveUser(1)" ion-button type="submit" block>5 Days Forecast</button>
+      <button id = "2" (click)="saveUser(2)" ion-button type="submit" block>16 Days Forecast</button>
+
+    <!-- </form> -->
+  </ion-content>
