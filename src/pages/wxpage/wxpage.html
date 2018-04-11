@@ -25,4 +25,14 @@
       <button id = "2" (click)="saveUser(2)" ion-button type="submit" block>16 Days Forecast</button>
 
     <!-- </form> -->
+    <h1>City : {{ place }}</h1>
+    <!-- <li ngFor="(k, v) in users">{{k}}: {{v}}</li> -->
+  <h1>Wind Speed : {{ wind_speed }}, {{ wind_deg}}</h1>
+  <h1>Description:</h1>
+  <h4 *ngFor="let char of users">
+
+      {{ char['description'] }}
+      
+  </h4>
+
   </ion-content>
